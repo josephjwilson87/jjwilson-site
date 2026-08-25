@@ -6,7 +6,7 @@
 <title>JJ Wilson — Media Kit</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #1A1713;
@@ -40,7 +40,7 @@
     color: var(--brass);
   }
 
-  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 500; }
+  h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; }
   a { color: inherit; text-decoration: none; }
 
   /* ---------- NAV ---------- */
@@ -54,7 +54,7 @@
     padding: 1.6rem clamp(1.5rem, 5vw, 4rem);
     mix-blend-mode: difference;
   }
-  .nav-mark { font-family: 'Fraunces', serif; font-size: 1.1rem; letter-spacing: 0.05em; color: #F8F4EA; }
+  .nav-mark { font-family: 'Playfair Display', serif; font-size: 1.1rem; letter-spacing: 0.05em; color: #F8F4EA; }
   .nav-links {
     display: flex;
     gap: clamp(1rem, 3vw, 2.2rem);
@@ -155,7 +155,7 @@
     margin-bottom: 0.9rem;
   }
   .stat-number {
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 4vw, 2.6rem);
     color: var(--ink);
     line-height: 1;
@@ -273,7 +273,7 @@
     background: var(--ink);
     color: var(--brass-soft);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 0.95rem;
     margin-bottom: 1.4rem;
   }
@@ -287,7 +287,30 @@
     color: var(--moss);
     border-bottom: 1px solid var(--moss);
     padding-bottom: 2px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+    font-weight: 400;
   }
+  .pick-list {
+    display: none;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+  }
+  .pick-list.open { display: flex; }
+  .pick-list a {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.66rem;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .pick-list a:hover { color: var(--moss); }
 
   footer {
     padding: 3rem clamp(1.5rem, 6vw, 5rem) 3.5rem;
@@ -373,6 +396,8 @@
   <div class="pillar-tags reveal">
     <span class="pillar-tag">Faith &amp; Church Life</span>
     <span class="pillar-tag">Motivation</span>
+    <span class="pillar-tag">Weight Loss &amp; Health Journey</span>
+    <span class="pillar-tag">Pet Life</span>
     <span class="pillar-tag">Marriage &amp; Family</span>
     <span class="pillar-tag">Men's Fashion</span>
     <span class="pillar-tag">Live Music Production</span>
@@ -422,6 +447,7 @@
   </div>
   <div class="trusted-strip reveal">
     <span class="trusted-pill">Beyoncé / BeyGOOD</span>
+    <span class="trusted-pill">Valarie Kaur</span>
     <span class="trusted-pill">Tye Tribbett</span>
     <span class="trusted-pill">Tasha Cobbs Leonard</span>
     <span class="trusted-pill">Travis Greene</span>
@@ -456,38 +482,71 @@
     <div class="shop-card reveal">
       <div class="shop-icon">S</div>
       <h3>Style &amp; Fits</h3>
-      <p>Everyday and elevated menswear pieces — add your affiliate links here.</p>
-      <a class="shop-link" href="#">Shop the picks →</a>
+      <p>The current rotation — Gucci on his feet, H&amp;M denim shorts, a Banana Republic button-up for work, and his newest cop, the JAY-Z x Yankees jersey.</p>
+      <button class="shop-link" onclick="this.nextElementSibling.classList.toggle('open')">Shop the picks →</button>
+      <div class="pick-list">
+        <a href="https://www.gucci.com/us/en/pr/men/shoes-for-men/sneakers-for-men/mens-gucci-ace-sneaker-with-web-p-757892AACAG9055" target="_blank" rel="noopener">Gucci Ace Sneaker (Black) →</a>
+        <a href="https://www2.hm.com/en_us/productpage.1213211002.html" target="_blank" rel="noopener">H&amp;M Slim Denim Shorts (Black) →</a>
+        <a href="https://bananarepublic.gap.com/browse/men/casual-shirts?cid=44873&color=black" target="_blank" rel="noopener">Banana Republic Black Button-Up →</a>
+        <a href="https://store.rocnation.com/products/jay-z-reasonable-doubt-x-yankees-jersey" target="_blank" rel="noopener">JAY-Z x Yankees Jersey (Official Roc Nation Merch) →</a>
+      </div>
     </div>
     <div class="shop-card reveal">
       <div class="shop-icon">G</div>
       <h3>Gear</h3>
-      <p>The consoles, cables, and gear that actually live in the rack — add your affiliate links here.</p>
-      <a class="shop-link" href="#">Shop the picks →</a>
+      <p>The consoles, cables, cases, and custom in-ears that actually live in the rack.</p>
+      <button class="shop-link" onclick="this.nextElementSibling.classList.toggle('open')">Shop the picks →</button>
+      <div class="pick-list">
+        <a href="https://www.pelican.com/us/en/product/cases/studio-case/protector/1510sc" target="_blank" rel="noopener">Pelican 1510SC Protector Case →</a>
+        <a href="https://jhaudio.com/iem/JHA-CIEM-ROX1" target="_blank" rel="noopener">JH Audio Roxanne™ Custom IEMs →</a>
+        <a href="https://www.seagate.com/products/creative-pro/lacie-rugged-secure/" target="_blank" rel="noopener">LaCie Rugged SECURE Drive →</a>
+        <a href="https://digico.biz/consoles/quantum338t/" target="_blank" rel="noopener">DiGiCo Quantum 338T Console →</a>
+      </div>
     </div>
     <div class="shop-card reveal">
       <div class="shop-icon">GR</div>
       <h3>Grooming</h3>
-      <p>Skincare, beard care, and fragrance — the guy is high-maintenance about his routine and not ashamed of it — add your affiliate links here.</p>
-      <a class="shop-link" href="#">Shop the picks →</a>
+      <p>Skincare, beard care, and fragrance — the guy is high-maintenance about his routine and not ashamed of it.</p>
+      <button class="shop-link" onclick="this.nextElementSibling.classList.toggle('open')">Shop the picks →</button>
+      <div class="pick-list">
+        <a href="https://tgproducts.com/products/flexfoam%E2%84%A2-5-in-1-6-76-oz?variant=52219431682350" target="_blank" rel="noopener">Titan FLEXFOAM™ 5-in-1 Wash →</a>
+        <a href="https://www.respectedroots.com/products/respected-roots-beard-conditioner-the-monarchy-scent?variant=49212800762166" target="_blank" rel="noopener">Respected Roots Beard Conditioner (Monarchy) →</a>
+        <a href="https://www.buttahskin.com/products/facial-shea-butter" target="_blank" rel="noopener">Buttah Skin Facial Shea Butter →</a>
+      </div>
     </div>
     <div class="shop-card reveal">
       <div class="shop-icon">K</div>
       <h3>Kitchen &amp; Cooking</h3>
-      <p>Tools and staples from the kitchen — add your affiliate links here.</p>
-      <a class="shop-link" href="#">Shop the picks →</a>
+      <p>Tools and staples from the kitchen.</p>
+      <button class="shop-link" onclick="this.nextElementSibling.classList.toggle('open')">Shop the picks →</button>
+      <div class="pick-list">
+        <a href="https://www.homedepot.com/p/NINJA-Foodi-5-in-1-Indoor-Grill-with-4-Qt-Air-Fryer-Roast-Bake-Dehydrate-and-Cyclonic-Grilling-AG301/313632924" target="_blank" rel="noopener">Ninja Foodi 5-in-1 Indoor Grill →</a>
+        <a href="https://www.amazon.com/Hamilton-Beach-40865-Electric-1-7-Liter/dp/B00CXMO01I" target="_blank" rel="noopener">Hamilton Beach 1.7L Glass Kettle →</a>
+        <a href="https://www.ysl.com/en-us/pr/baccarat-flutes-in-black-crystal-683575YCL111000.html" target="_blank" rel="noopener">Saint Laurent x Baccarat Flutes (Black Crystal) →</a>
+        <a href="https://www.williams-sonoma.com/products/walnut-essential-utensils-set-of-5/" target="_blank" rel="noopener">Williams Sonoma Walnut Essentials Utensils (Set of 5) →</a>
+      </div>
     </div>
     <div class="shop-card reveal">
       <div class="shop-icon">P</div>
       <h3>Pet Life</h3>
-      <p>Everything for the dog who's basically a fifth family member — add your affiliate links here.</p>
-      <a class="shop-link" href="#">Shop the picks →</a>
+      <p>Everything for the dog who's basically a fifth family member.</p>
+      <button class="shop-link" onclick="this.nextElementSibling.classList.toggle('open')">Shop the picks →</button>
+      <div class="pick-list">
+        <a href="https://www.tractorsupply.com/tsc/product/4health-original-salmon-potato-formula-adult-dog-food-45-lb-bag-1424210" target="_blank" rel="noopener">4health Salmon &amp; Potato Dog Food →</a>
+        <a href="https://www.walmart.com/ip/Blue-Buffalo-Health-Bars-Mini-Crunchy-Dog-Biscuits-Oven-Baked-with-Natural-Ingredients-Apples-Yogurt-16-oz-Bag/14685573753" target="_blank" rel="noopener">Blue Buffalo Health Bars (Apples &amp; Yogurt) →</a>
+        <a href="https://shop.tiktok.com/us/pdp/sleekez-deshedding-dog-brush-for-all-fur-types-5-inches-long/1729646185502707732" target="_blank" rel="noopener">SleekEZ Deshedding Brush →</a>
+      </div>
     </div>
     <div class="shop-card reveal">
       <div class="shop-icon">B</div>
       <h3>Books &amp; Training</h3>
-      <p>Faith, leadership, and production books shaping how he leads teams — add your affiliate links here.</p>
-      <a class="shop-link" href="#">Shop the picks →</a>
+      <p>Faith, leadership, and audio engineering books shaping how he leads teams — plus ongoing training through CFX conference attendance.</p>
+      <button class="shop-link" onclick="this.nextElementSibling.classList.toggle('open')">Shop the picks →</button>
+      <div class="pick-list">
+        <a href="https://www.melrobbins.com/book/the-let-them-theory/" target="_blank" rel="noopener">The Let Them Theory — Mel Robbins →</a>
+        <a href="https://www.barnesandnoble.com/w/how-to-hold-your-pastors-ladder-sam-chand/1148989102?ean=9781969062094" target="_blank" rel="noopener">How to Hold Your Pastor's Ladder — Sam Chand →</a>
+        <a href="https://www.amazon.com/Audio-Engineering-101-Beginners-Production/dp/1032553294" target="_blank" rel="noopener">Audio Engineering 101 — Tim Dittmar →</a>
+      </div>
     </div>
   </div>
 </section>
