@@ -1,3 +1,6 @@
+
+
+Jjwilson site · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,7 @@
 <title>JJ Wilson</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --ink: #1A1713;
@@ -19,11 +22,11 @@
     --moss: #3F4A3D;
     --line: rgba(26, 23, 19, 0.14);
   }
-
+ 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--paper);
     color: var(--ink);
@@ -32,7 +35,7 @@
     line-height: 1.5;
     overflow-x: hidden;
   }
-
+ 
   .eyebrow {
     font-family: 'Space Mono', monospace;
     font-size: 0.72rem;
@@ -40,11 +43,11 @@
     text-transform: uppercase;
     color: var(--brass);
   }
-
-  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 500; }
-
+ 
+  h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 500; }
+ 
   a { color: inherit; text-decoration: none; }
-
+ 
   /* ---------- NAV ---------- */
   nav {
     position: fixed;
@@ -57,7 +60,7 @@
     mix-blend-mode: difference;
   }
   .nav-mark {
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
     letter-spacing: 0.05em;
     color: #F8F4EA;
@@ -73,7 +76,7 @@
   }
   .nav-links a { opacity: 0.75; transition: opacity 0.25s ease; }
   .nav-links a:hover { opacity: 1; }
-
+ 
   /* ---------- HERO ---------- */
   .hero {
     min-height: 100svh;
@@ -98,13 +101,13 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
     pointer-events: none;
   }
-
+ 
   .badge {
     width: 92px; height: 92px;
     border: 1px solid var(--brass-soft);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.15rem;
     letter-spacing: 0.04em;
     color: var(--brass-soft);
@@ -115,7 +118,7 @@
   .badge span { animation: spin-back 26s linear infinite; }
   @keyframes spin-slow { to { transform: rotate(360deg); } }
   @keyframes spin-back { to { transform: rotate(-360deg); } }
-
+ 
   .hero h1 {
     font-size: clamp(3.2rem, 10vw, 7rem);
     letter-spacing: -0.01em;
@@ -147,7 +150,7 @@
     color: rgba(248,244,234,0.78);
     z-index: 1;
   }
-
+ 
   .hero-socials {
     display: flex;
     gap: 1rem;
@@ -169,7 +172,7 @@
     border-color: var(--brass-soft);
     background: rgba(169,136,79,0.12);
   }
-
+ 
   .scroll-cue {
     position: absolute;
     bottom: 2.2rem;
@@ -179,7 +182,7 @@
     text-transform: uppercase;
     color: rgba(248,244,234,0.45);
   }
-
+ 
   /* ---------- SECTION SHELL ---------- */
   section.block {
     padding: clamp(5rem, 10vw, 8rem) clamp(1.5rem, 6vw, 5rem);
@@ -195,14 +198,14 @@
     padding-bottom: 1.4rem;
   }
   .section-head h2 { font-size: clamp(1.8rem, 3.4vw, 2.6rem); }
-
+ 
   .reveal {
     opacity: 0;
     transform: translateY(22px);
     transition: opacity 0.8s ease, transform 0.8s ease;
   }
   .reveal.in { opacity: 1; transform: translateY(0); }
-
+ 
   /* ---------- WORK / RESUME ---------- */
   .work-list { display: flex; flex-direction: column; }
   .work-row {
@@ -219,7 +222,7 @@
     padding-top: 0.2rem;
   }
   .work-title {
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.35rem;
     margin-bottom: 0.5rem;
   }
@@ -247,7 +250,7 @@
     padding: 0.25rem 0.6rem;
     border-radius: 4px;
   }
-
+ 
   /* ---------- SHOP ---------- */
   .shop-grid {
     display: grid;
@@ -272,7 +275,7 @@
     background: var(--ink);
     color: var(--brass-soft);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 0.95rem;
     margin-bottom: 1.4rem;
   }
@@ -287,7 +290,7 @@
     border-bottom: 1px solid var(--moss);
     padding-bottom: 2px;
   }
-
+ 
   /* ---------- CONTACT ---------- */
   .contact-block {
     background: var(--ink);
@@ -329,7 +332,7 @@
     z-index: 1;
   }
   .contact-cta:hover { background: var(--brass-soft); }
-
+ 
   .contact-side { z-index: 1; }
   .contact-item {
     display: flex;
@@ -341,7 +344,7 @@
     letter-spacing: 0.05em;
   }
   .contact-item span:first-child { color: rgba(248,244,234,0.5); }
-
+ 
   /* ---------- INQUIRY FORM ---------- */
   .inquiry-form {
     z-index: 1;
@@ -404,7 +407,7 @@
     font-family: 'Space Mono', monospace;
     letter-spacing: 0.02em;
   }
-
+ 
   footer {
     padding: 3rem clamp(1.5rem, 6vw, 5rem) 3.5rem;
     display: flex;
@@ -419,12 +422,12 @@
     max-width: 1180px;
     margin: 0 auto;
   }
-
+ 
   /* ---------- VALUE STATEMENT (hero) ---------- */
   .hero-value {
     max-width: 32rem;
     margin: 1.6rem auto 0;
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 400;
     font-size: clamp(1.05rem, 1.9vw, 1.3rem);
@@ -432,10 +435,10 @@
     line-height: 1.45;
     z-index: 1;
   }
-
+ 
   /* ---------- PULL QUOTE ---------- */
   .pull-quote {
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-style: italic;
     font-size: clamp(1.3rem, 2.6vw, 1.7rem);
     color: var(--ink);
@@ -444,7 +447,7 @@
     margin: 2rem 0;
     max-width: 40rem;
   }
-
+ 
   /* ---------- EXPERTISE TAGS ---------- */
   .expertise-tags { display: flex; flex-wrap: wrap; gap: 0.7rem; }
   .expertise-tag {
@@ -457,7 +460,7 @@
     letter-spacing: 0.04em;
     color: var(--ink-soft);
   }
-
+ 
   /* ---------- TRUSTED BY ---------- */
   .trusted-grid {
     display: grid;
@@ -479,7 +482,7 @@
     color: var(--brass-soft);
     border: 1px solid var(--brass-soft);
     display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 0.9rem;
   }
   .trusted-name {
@@ -497,7 +500,7 @@
     border-top: 1px solid var(--line);
     padding-top: 1.6rem;
   }
-
+ 
   /* ---------- CASE STUDIES ---------- */
   .case-grid { display: flex; flex-direction: column; gap: 2rem; }
   .case-card {
@@ -565,7 +568,7 @@
     color: var(--moss);
     font-weight: 500;
   }
-
+ 
   /* ---------- LEADERSHIP ---------- */
   .leadership-grid {
     display: grid;
@@ -580,7 +583,7 @@
     color: var(--ink-soft);
     font-size: 0.92rem;
   }
-
+ 
   /* ---------- SERVICES ---------- */
   .services-grid {
     display: grid;
@@ -594,7 +597,27 @@
     color: var(--ink-soft);
     font-size: 0.95rem;
   }
-
+ 
+  /* ---------- DESIGN SHOWCASE ---------- */
+  .design-showcase {
+    margin-top: 2.4rem;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .design-showcase img {
+    width: 100%;
+    display: block;
+  }
+  .design-showcase-caption {
+    background: var(--stone);
+    padding: 1rem 1.4rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    color: var(--ink-soft);
+  }
+ 
   @media (max-width: 720px) {
     .nav-links { display: none; }
     .work-row { grid-template-columns: 1fr; gap: 0.6rem; }
@@ -605,7 +628,7 @@
     .form-two { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 0.6rem; text-align: center; }
   }
-
+ 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     .badge, .badge span { animation: none; }
@@ -614,7 +637,7 @@
 </style>
 </head>
 <body>
-
+ 
 <nav>
   <div class="nav-mark">JJ WILSON</div>
   <div class="nav-links">
@@ -624,7 +647,7 @@
     <a href="#contact">Contact</a>
   </div>
 </nav>
-
+ 
 <section class="hero">
   <div class="badge"><span>JJW</span></div>
   <h1>JJ Wilson</h1>
@@ -639,7 +662,7 @@
   </div>
   <div class="scroll-cue">Scroll ↓</div>
 </section>
-
+ 
 <section class="block" id="about">
   <div class="section-head reveal">
     <span class="eyebrow">Behind the Booth</span>
@@ -664,7 +687,7 @@
     </p>
   </div>
 </section>
-
+ 
 <section class="block" id="expertise">
   <div class="section-head reveal">
     <span class="eyebrow">Core Expertise</span>
@@ -682,7 +705,7 @@
     <span class="expertise-tag">Training, Mentorship &amp; Leadership Development</span>
   </div>
 </section>
-
+ 
 <section class="block" id="certifications">
   <div class="section-head reveal">
     <span class="eyebrow">Credentials</span>
@@ -699,13 +722,13 @@
     Audio Production &amp; Design Certificates I &amp; II — Living Arts College, Raleigh, NC.
   </p>
 </section>
-
+ 
 <section class="block" id="experience">
   <div class="section-head reveal">
     <span class="eyebrow">Full Timeline</span>
     <h2>Experience</h2>
   </div>
-
+ 
   <div class="work-list">
     <div class="work-row reveal">
       <div>
@@ -714,7 +737,7 @@
         <div class="work-meta">Dumfries, VA</div>
       </div>
     </div>
-
+ 
     <div class="work-row reveal">
       <div>
         <div class="work-title">Sales Director — Pinnacle Live</div>
@@ -722,7 +745,7 @@
         <div class="work-meta">Atlanta, GA</div>
       </div>
     </div>
-
+ 
     <div class="work-row reveal">
       <div>
         <div class="work-title">Founder / CEO — Diverge Event Management Group</div>
@@ -730,7 +753,7 @@
         <div class="work-meta">AV &amp; Event Production</div>
       </div>
     </div>
-
+ 
     <div class="work-row reveal">
       <div>
         <div class="work-title">Technical Director — Change Church</div>
@@ -738,7 +761,7 @@
         <div class="work-meta">House of Worship</div>
       </div>
     </div>
-
+ 
     <div class="work-row reveal">
       <div>
         <div class="work-title">Production Manager — Alpha Production Group</div>
@@ -746,7 +769,7 @@
         <div class="work-meta">Corporate &amp; Entertainment</div>
       </div>
     </div>
-
+ 
     <div class="work-row reveal">
       <div>
         <div class="work-title">Sales &amp; Production Manager — AE Global Media</div>
@@ -754,7 +777,7 @@
         <div class="work-meta">Corporate &amp; Worship</div>
       </div>
     </div>
-
+ 
     <div class="work-row reveal">
       <div>
         <div class="work-title">Entertainment &amp; Production Technician — Disney Cruise Line</div>
@@ -764,7 +787,7 @@
     </div>
   </div>
 </section>
-
+ 
 <section class="block" id="services">
   <div class="section-head reveal">
     <span class="eyebrow">Services</span>
@@ -782,8 +805,12 @@
     <div class="service-item">Production &amp; Business Consulting</div>
     <div class="service-item">Speaking &amp; Guest Engagements</div>
   </div>
+  <div class="design-showcase reveal">
+    <img src="images/change-church-stage-render.jpg" alt="Stage design concept render for Change Church">
+    <div class="design-showcase-caption">Stage Design Concept — Change Church</div>
+  </div>
 </section>
-
+ 
 <section class="block" id="leadership">
   <div class="section-head reveal">
     <span class="eyebrow">Leadership</span>
@@ -803,7 +830,7 @@
     </ul>
   </div>
 </section>
-
+ 
 <section class="block" id="trusted">
   <div class="section-head reveal">
     <span class="eyebrow">Trusted By</span>
@@ -811,6 +838,7 @@
   </div>
   <div class="trusted-grid reveal">
     <div class="trusted-chip"><div class="trusted-avatar">B</div><div class="trusted-name">Beyoncé / BeyGOOD</div></div>
+    <div class="trusted-chip"><div class="trusted-avatar">VK</div><div class="trusted-name">Valarie Kaur</div></div>
     <div class="trusted-chip"><div class="trusted-avatar">TT</div><div class="trusted-name">Tye Tribbett</div></div>
     <div class="trusted-chip"><div class="trusted-avatar">TC</div><div class="trusted-name">Tasha Cobbs Leonard</div></div>
     <div class="trusted-chip"><div class="trusted-avatar">TG</div><div class="trusted-name">Travis Greene</div></div>
@@ -832,44 +860,44 @@
   </div>
   <p class="trusted-caption reveal">From global artists to growing ministries, Joe brings the same standard: build the system, develop the team, and execute with excellence — every time.</p>
 </section>
-
+ 
 <section class="block" id="work">
   <div class="section-head reveal">
     <span class="eyebrow">Selected Work</span>
     <h2>Case Studies</h2>
   </div>
-
+ 
   <div class="case-grid">
     <div class="case-card reveal">
-      <div class="case-image">Photo placeholder<br>Omni Hotels partnership</div>
+      <div class="case-image" style="background-image: url('images/tye-tribbett-case-study.jpg'); background-size: cover; background-position: center; color: transparent;">Tye Tribbett — All Things New</div>
       <div class="case-body">
         <div class="case-eyebrow">Case Study 01</div>
-        <div class="case-title">Omni Hotels AV Partnership Growth</div>
-        <div class="case-role">Sales Director, Pinnacle Live</div>
-        <p class="case-overview">Led client strategy and production alignment for a major hospitality partnership.</p>
+        <div class="case-title">Tye Tribbett — All Things New: Live in Orlando</div>
+        <div class="case-role">Production Manager <span style="color: var(--brass); font-family: 'Space Mono', monospace; font-size: 0.68rem; letter-spacing: 0.04em;">&middot; Grammy Award-Winning Recording</span></div>
+        <p class="case-overview">Served as Production Manager for Tye Tribbett's "All Things New: Live in Orlando" recording, with his company supplying all production gear and leading a 10-person sound crew.</p>
         <div class="case-cols">
           <div class="case-col">
             <h4>Key Contributions</h4>
             <ul>
-              <li>Directed communication between sales and production teams</li>
-              <li>Aligned pricing strategy with operational delivery</li>
-              <li>Strengthened long-term client relationships</li>
+              <li>Designed the full sound system from scratch</li>
+              <li>Supplied all production gear through his company</li>
+              <li>Led and ran the live mix with a 10-person sound crew</li>
             </ul>
           </div>
           <div class="case-col">
             <h4>Leadership Impact</h4>
             <ul>
-              <li>Unified cross-functional teams across departments</li>
-              <li>Established consistency across multiple events</li>
+              <li>Directed a 10-person crew through a high-pressure live recording environment</li>
+              <li>Delivered broadcast-quality sound under tight timing constraints</li>
             </ul>
           </div>
         </div>
-        <div class="case-result">Result: Expanded client portfolio, increased repeat business and long-term partnerships.</div>
+        <div class="case-result">Result: A Grammy Award-winning live recording that captured a high-energy worship experience, strengthening the relationship for future collaborations.</div>
       </div>
     </div>
-
+ 
     <div class="case-card reveal">
-      <div class="case-image">Photo placeholder<br>Diverge event build</div>
+      <div class="case-image" style="background-image: url('images/diverge-case-study.jpg'); background-size: cover; background-position: center; color: transparent;">Diverge event build</div>
       <div class="case-body">
         <div class="case-eyebrow">Case Study 02</div>
         <div class="case-title">Full-Service Event Company Build</div>
@@ -895,9 +923,9 @@
         <div class="case-result">Result: Achieved profitability with strong repeat clientele and referral-driven growth.</div>
       </div>
     </div>
-
+ 
     <div class="case-card reveal">
-      <div class="case-image">Photo placeholder<br>Change Church production</div>
+      <div class="case-image" style="background-image: url('images/change-church-case-study.png'); background-size: cover; background-position: center; color: transparent;">Change Church production</div>
       <div class="case-body">
         <div class="case-eyebrow">Case Study 03</div>
         <div class="case-title">Church Production Systems &amp; Team Development</div>
@@ -923,43 +951,16 @@
         <div class="case-result">Result: Improved production quality and reliability; built a scalable team model to support growth.</div>
       </div>
     </div>
-
-    <div class="case-card reveal">
-      <div class="case-image">Photo placeholder<br>Disney Cruise Line</div>
-      <div class="case-body">
-        <div class="case-eyebrow">Case Study 04</div>
-        <div class="case-title">Live Entertainment Operations</div>
-        <div class="case-role">Disney Cruise Line</div>
-        <p class="case-overview">Delivered consistent, high-quality entertainment experiences in a fast-paced, global environment.</p>
-        <div class="case-cols">
-          <div class="case-col">
-            <h4>Leadership Impact</h4>
-            <ul>
-              <li>Managed diverse, international production teams</li>
-              <li>Collaborated with creative directors and technical staff</li>
-              <li>Maintained performance consistency across multiple shows</li>
-            </ul>
-          </div>
-          <div class="case-col">
-            <h4>Result</h4>
-            <ul>
-              <li>Elevated guest experience across productions</li>
-              <li>Maintained operational excellence at scale</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
-
+ 
 <section class="block" id="contact">
   <div class="contact-block reveal">
     <div>
       <span class="eyebrow">Let's Work</span>
       <h2>Submit a Request</h2>
       <p>Speaking engagements, training &amp; workshops, consulting, bookings, and brand partnerships — fill out the form and JJ's team will follow up.</p>
-
+ 
       <form class="inquiry-form" id="inquiryForm">
         <div class="form-row">
           <label for="inquiryType">What are you reaching out about?</label>
@@ -973,7 +974,7 @@
             <option value="Other">Other</option>
           </select>
         </div>
-
+ 
         <div class="form-two">
           <div class="form-row">
             <label for="inquiryName">Name</label>
@@ -984,17 +985,17 @@
             <input type="email" id="inquiryEmail" placeholder="you@company.com" required>
           </div>
         </div>
-
+ 
         <div class="form-row">
           <label for="inquiryOrg">Organization (optional)</label>
           <input type="text" id="inquiryOrg" placeholder="Company, church, or brand name">
         </div>
-
+ 
         <div class="form-row">
           <label for="inquiryMessage">Tell him about the opportunity</label>
           <textarea id="inquiryMessage" placeholder="Event date, location, scope, budget range — whatever's helpful" required></textarea>
         </div>
-
+ 
         <button type="submit" class="form-submit">Send request →</button>
         <div class="form-note">Opens your email client with everything pre-filled — nothing is stored or sent from this page.</div>
       </form>
@@ -1007,19 +1008,19 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <span>&copy; 2026 JJ Wilson (Joe Wilson Jr.)</span>
-  <span>Faith &middot; Family &middot; Style &middot; Music</span>
+  <span>Faith &middot; Family &middot; Live Music &middot; Ministry Production</span>
 </footer>
-
+ 
 <script>
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.15 });
   revealEls.forEach(el => io.observe(el));
-
+ 
   const inquiryForm = document.getElementById('inquiryForm');
   if (inquiryForm) {
     inquiryForm.addEventListener('submit', function (e) {
@@ -1029,7 +1030,7 @@
       const email = document.getElementById('inquiryEmail').value;
       const org = document.getElementById('inquiryOrg').value;
       const message = document.getElementById('inquiryMessage').value;
-
+ 
       const subject = `${type || 'Inquiry'} — ${name}`;
       const bodyLines = [
         `Inquiry type: ${type}`,
@@ -1039,12 +1040,21 @@
         '',
         message
       ].filter(Boolean);
-
+ 
       const mailto = `mailto:josephj.wilson87@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
       window.location.href = mailto;
     });
   }
 </script>
-
+ 
 </body>
 </html>
+ 
+
+
+
+
+
+
+
+
